@@ -27,7 +27,13 @@ if( isset ($_GET["page"])  && !empty($_GET["page"]) ){
     default:
       $view = "views/pages/mesure.php";  // home page
 } 
+
 }
+else {
+  $view="views/pages/mesure.php";
+}
+
+include $view;
 
 include "views/partials/footer.php";
 
