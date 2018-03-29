@@ -1,0 +1,30 @@
+
+
+.reseau_sociaux{
+  background-color: #0080c6;
+  padding-top: 4%;
+  border: 1px solid #2e2c87;
+}
+
+.fa{
+  color: white;
+}
+
+.menu{
+  color: black;
+  background-color: #0099cf;
+    border: 1px solid #2e2c87;
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nav-item{
+color: black !important;
+}
+
+.nav-item:hover{
+color: white !important;
+}
