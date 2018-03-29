@@ -36,7 +36,7 @@
     <a class="nav-item nav-link" href="mesure.php">Mesure</a>
     <a class="nav-item nav-link" href="map.php">Map</a>
     <a class="nav-item nav-link disabled" href="sensibilisation.php">Sensibilisation</a>
-    <a class="nav-item nav-link disabled" href="parametres.php">Parametres</a>
+    <a class="nav-item nav-link disabled" href="parametres.php">Paramètres</a>
     <a class="nav-item nav-link disabled" href="contact.php">Contact</a>
   </div>
 </div>
