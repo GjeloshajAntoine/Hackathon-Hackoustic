@@ -26,18 +26,22 @@
 <body>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light menu">
-    <a class="navbar-brand" href="index.php"> NOISE-AREA  </a>
+    <a class="navbar-brand text-white" href="index.php"> NOISE-AREA  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link active" href="index.php">Accueil <span class="sr-only">(current)</span></a>
-    <a class="nav-item nav-link" href="mesure.php">Mesure</a>
+  <div class="navbar-nav text-white">
+    <a class="nav-item nav-link active text-white" href="mesure.php">Mesure<span class="sr-only">(current)</span></a>
     <a class="nav-item nav-link" href="map.php">Map</a>
-    <a class="nav-item nav-link disabled" href="sensibilisation.php">Sensibilisation</a>
-    <a class="nav-item nav-link disabled" href="parametres.php">Paramètres</a>
-    <a class="nav-item nav-link disabled" href="contact.php">Contact</a>
+    <a class="nav-item nav-link" href="sensibilisation.php">Sensibilisation</a>
+    <a class="nav-item nav-link" href="parametres.php">Paramètres</a>
+    <a class="nav-item nav-link" href="contact.php">Contact</a>
+  </div>
+  <div class="container-fluid reseau_sociaux list-group flex-row d-flex justify-content-around">
+      <a href="#"> <i class="fab fa-facebook-f fa-1x text-white"></i> </a>
+      <a href="#"> <i class="fab fa-twitter fa-1x text-white"></i> </a>
+      <a href="#"> <i class="fab fa-google-plus-g fa-1x text-white"></i> </a>
   </div>
 </div>
 </nav>
