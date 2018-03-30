@@ -1,6 +1,7 @@
 <?php include '../partials/header.php' ?>
 
-<div id="map" style="height:550px;width:50%;"></div>
+<div id="map" style="height:550px;width:100%;"></div>
+
 <div class="legend" style="margin-bottom:10%">
   <img style="float:left" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"  width="25" alt="">
   <p style="font-size:1.5em;" >Lieux</p >

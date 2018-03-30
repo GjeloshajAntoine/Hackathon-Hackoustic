@@ -53,7 +53,7 @@ var getAverage=function(){
 
 $('#sendData').click(function(){
         // getAverage();
-    let link ="http://localhost:8888/Hackathon-Hackoustic/index.php?page=son&moyenne="+getAverage();
+    let link ="/?page=son&moyenne="+getAverage();
         window.location=link;
     }
 );

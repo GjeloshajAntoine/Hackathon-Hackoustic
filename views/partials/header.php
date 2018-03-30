@@ -29,13 +29,13 @@
 <body>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light menu">
-    <a class="navbar-brand text-white" href="index.php"> NOISE-AREA  </a>
+    <a class="navbar-brand text-white" href="/"> NOISE-AREA  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div class="navbar-nav text-white">
-    <a class="nav-item nav-link active text-white" href="mesure.php">Mesure<span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link active text-white" href="/?page=mesure">Mesure<span class="sr-only">(current)</span></a>
     <a class="nav-item nav-link" href="/?page=map">Map</a>
     <a class="nav-item nav-link" href="/?page=sensibilisation">Sensibilisation</a>
     <a class="nav-item nav-link" href="/?page=parametres">Paramètres</a>
