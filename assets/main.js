@@ -17,10 +17,10 @@ var getDecibels = function () {
 
 // console.log($('#soundBox'));
 var changeBg = function (zz) {
-    if (zz <= 500) {
+    if (zz <= 75) {
         $('#soundBox').removeClass().addClass("green");
     }
-    else if (zz > 500 && zz < 900) {
+    else if (zz > 75 && zz < 120) {
         $('#soundBox').removeClass().addClass("orange");
     }
     else {

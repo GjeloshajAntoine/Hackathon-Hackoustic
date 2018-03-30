@@ -12,9 +12,9 @@ if( isset ($_GET["moyenne"])  && !empty($_GET["moyenne"]) ){
    $decibels=$_GET["moyenne"];
 }
 $decibelsText="";
-if($decibels<250){
+if($decibels<75){
   $decibelsText="Entre 20 et 75 decibels   ";
-}else if($decibels >=250 && $decibels <600){
+}else if($decibels >=75 && $decibels <120){
   $decibelsText="Entre 76 et 95 decibels   ";
 }
 else {
@@ -25,14 +25,14 @@ else {
 <div class="card text-center theme p-3">
   <div class="card-body">
     <?php
-      if($decibels<250){
-        echo '<h6 class="card-header textGreen"> '.$decibelsText.'    <img class="emoticon" src="assets/images/emoticones/niveau2.png"></h6>';
+      if($decibels<75){
+        echo '<h3 class="card-header textGreen"> '.$decibelsText.'    <img class="emoticon" src="assets/images/emoticones/niveau3.png"></h3>';
       }
-      else if($decibels>=250 && $decibels <600){
-        echo '<h6 class="card-header textOrange"> '.$decibelsText.'    <img class="emoticon" src="assets/images/emoticones/niveau3.png"></h6>';
+      else if($decibels>=75 && $decibels <120){
+        echo '<h3 class="card-header textOrange"> '.$decibelsText.'    <img class="emoticon" src="assets/images/emoticones/niveau2.png"></h3>';
       }
       else {
-        echo '<h6 class="card-header textRed"> '.$decibelsText.'    <img class="emoticon"  src="assets/images/emoticones/niveau4.png"></h6>';
+        echo '<h3 class="card-header textRed"> '.$decibelsText.'    <img class="emoticon"  src="assets/images/emoticones/niveau4.png"></h3>';
       }
     ?>
     <!-- <img class="card-img-top rounded-0" src="assets/images/images.jpeg" alt="Card image HELP"> -->
