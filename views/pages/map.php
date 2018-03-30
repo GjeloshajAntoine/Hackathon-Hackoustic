@@ -1,4 +1,4 @@
-<?php include '../partials/header.php' ?>
+
 
 <div id="map" style="height:550px;width:100%;"></div>
 
@@ -71,4 +71,4 @@ var nearest = turf.nearestPoint(targetPoint, points);
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH957nUQiCtu1McwPxpBbx9ABbBu4aXdg&callback=initMap">
 </script>
 
-<?php include '../partials/footer.php' ?>
+
