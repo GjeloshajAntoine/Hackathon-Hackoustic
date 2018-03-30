@@ -50,10 +50,9 @@ else {
       else{
         echo "<p> Tu as le choix :<ul class='unlist'><li>Enfuis toi !</li><li> Achètes toi de nouvelles oreilles </li><li> De bonne grosses boules quies</li><li>Prends le risque d'endomager tes oreilles :( </li></ul></p>";
       }
-    ?> <br> <br>
-    <div class="d-flex justify-content-around align-items-center">
-      <a href="index.php?page=sensibilisation" class="">Plus d'informations...</a>
-      <a href="#" class="btn btn-sm addMap">Ajouter à la Map</a>
-    </div>
+    ?>
+    <a href="index.php?page=sensibilisation" class="m-4">Plus d'informations...</a>
+    <br> <br>
+    <a href="#" class="btn btn-sm addMap mt-3">Ajouter à la Map</a>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<?php include('../partials/header.php'); ?>
+
 
 <table class="table table-striped">
   <thead>
@@ -33,4 +33,4 @@
 
 
 
-<?php include "../partials/footer.php"; ?>
+
