@@ -1,4 +1,4 @@
-<div class="container" style="margin-top:5%;">
+<div class="container theme" style="margin-top:5%;">
 <h1> Contactez-nous </h1>
   <form method="POST" class="well col-md-12">
     <!--nom field  -->

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid theme">
   <div class="row parametres">
     <div class="col-md-8 col-8">
       <p class="notifications">Notifications</p>
