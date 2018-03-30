@@ -1,4 +1,48 @@
+body,html{
+    width:100%;
+    overflow-x:hidden;
+    margin:0;
+    font-family:'Ubuntu',sans-serif;
+}
 
+#soundBox{
+    margin:10px auto;
+    height:150px;
+    width:60%;
+    border-radius:5px;
+}
+
+.red{
+    background-color:red;
+}
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
+
+.textRed{
+    color:red;
+}
+.textGreen {
+    color: Green;
+}
+.textOrange {
+    color: Orange;
+}
+
+#sendData{
+    padding:10px 10px ;
+    border-radius:5px;
+}
+
+
+.jwz{
+    border:solid 0.5px rgba(0,0,0,0.2);
+    margin:30px auto;
+    padding:30px 0px;
+}
 
 .reseau_sociaux{
   background-color: #0080c6;
@@ -27,4 +71,15 @@ color: black !important;
 
 .nav-item:hover{
 color: white !important;
+}
+
+/*page son*/
+.addMap{
+  color: white;
+  background-color: #153882;
+}
+
+.addMap:hover{
+  background-color: #0079BE;
+  color: white;
 }
