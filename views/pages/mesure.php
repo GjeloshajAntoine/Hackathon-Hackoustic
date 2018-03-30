@@ -1,4 +1,4 @@
-<div class=" jwz container text-center">
+<div class=" jwz container-fluid text-center theme">
     <h2>Bienvenue sur la page de visualisation du son</h2>
 
 <div id="soundBox"></div>

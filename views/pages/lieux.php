@@ -1,9 +1,9 @@
-
-<h4 class="text-center lieux"> Informations sonore </h4>
+<div class="theme">
+<h4 class="text-center lieux"> Informations sonores </h4>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Debut</th>
+      <th scope="col">Début</th>
       <th scope="col">Fin</th>
       <th scope="col">Niveau Sonore</th>
     </tr>
@@ -134,3 +134,4 @@
 </table>
 
   <p class="text-center infos"> <a href="#"> Plus d'informatins </a> <p>
+</div>
