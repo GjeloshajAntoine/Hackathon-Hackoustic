@@ -5,6 +5,12 @@ body,html{
     font-family:'Ubuntu',sans-serif;
 }
 
+.theme{
+  /*background-color: #153882 !important;*/
+  background-image: url("images/fdblue.jpg");
+  background-repeat: round;
+}
+
 #soundBox{
     margin:10px auto;
     height:150px;
@@ -45,9 +51,10 @@ body,html{
 }
 
 .reseau_sociaux{
-  background-color: #0080c6;
-  padding-top: 4%;
-  border: 1px solid #2e2c87;
+  width: 100%;
+  color: white !important;
+  padding-top: 2px;
+  /*border top: 1px solid #2e2c87;*/
 }
 
 .fa{
@@ -55,9 +62,9 @@ body,html{
 }
 
 .menu{
-  color: black;
-  background-color: #0099cf;
-    border: 1px solid #2e2c87;
+  background: #4CA1AF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container-fluid{
@@ -72,6 +79,14 @@ color: black !important;
 .nav-item:hover{
 color: white !important;
 }
+.unlist {
+    list-style-type: none;
+}
+.emoticon {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+}
 
 /*page son*/
 .addMap{
@@ -82,4 +97,10 @@ color: white !important;
 .addMap:hover{
   background-color: #0079BE;
   color: white;
+}
+
+.joke{
+  font-family:'Amatic SC', sans-serif;
+  /*color: white;*/
+  font-size: 25px;
 }
