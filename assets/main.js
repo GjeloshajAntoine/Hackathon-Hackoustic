@@ -28,7 +28,9 @@ var changeBg = function (zz) {
     }
 }
 var checkDecibels = function () {
-    changeBg(getDecibels());
+    var decibels=getDecibels()
+    changeBg(decibels);
+    socket.emit('volume',{volume:decibels});
     decibelsArray.push(getDecibels());
 }
 

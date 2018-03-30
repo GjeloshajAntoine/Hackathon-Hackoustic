@@ -1,7 +1,13 @@
 <?php include '../partials/header.php' ?>
 
 <div id="map" style="height:550px;width:50%;"></div>
-
+<div class="legend" style="margin-bottom:10%">
+  <img style="float:left" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"  width="25" alt="">
+  <p style="font-size:1.5em;" >Lieux</p >
+  <img style="float:left" src="https://maps.google.com/mapfiles/kml/shapes/earthquake.png" width="35"  alt="">
+  <p style="font-size:1.5em;" >Travaux</p >
+</div>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
 <script type="text/javascript">
   function initMap() {
     var center = {lat: 50.8455124, lng: 4.3552839};
@@ -13,11 +19,11 @@
       position: center,
       map: map
     });
-    
+
     $.ajax({
       url:'https://api.irisnetlab.be:443/api/happyears/0.1.0/places',
       headers:{
-        Authorization:'Bearer 1b67da63-e6d8-3ad9-aed0-cc7d1cd91618',
+        Authorization:'Bearer 1e3ae766-abfc-361a-8f29-032e4d6cf8c5',
         Accept:"application/json"
       }
     }).done(function (data) {
@@ -29,11 +35,36 @@
           position: {lat: parseFloat(coord.geometry.coordinates[1]), lng: parseFloat(coord.geometry.coordinates[0])},
           map: window.map
         });
+        marker.addListener('click', function(truc) {
+          console.log("click",this);
+          var lat =truc.latLng.lat();
+          var lng=truc.latLng.lng()
+          var targetPoint = turf.point([lat, lng], {"marker-color": "#0F0"});
+          window.location.href="/?page=mesure"
+        });
+
       }
     });
-
+    //traveaux
+    $.ajax({
+      url:'data-mobility.brussels.json',
+    }).done(function (data) {
+      console.log(data);
+      for (coord of data.features) {
+        console.log(coord.geometry.coordinates);
+        console.log({lat: coord.geometry.coordinates[1], lng: coord.geometry.coordinates[0]});
+        var marker = new google.maps.Marker({
+          position: {lat: parseFloat(coord.geometry.coordinates[1]), lng: parseFloat(coord.geometry.coordinates[0])},
+          map: window.map,
+          icon:'https://maps.google.com/mapfiles/kml/shapes/'+'earthquake.png'
+        });
+      }
+    });
   }
 
+
+
+var nearest = turf.nearestPoint(targetPoint, points);
 </script>
 
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH957nUQiCtu1McwPxpBbx9ABbBu4aXdg&callback=initMap">
