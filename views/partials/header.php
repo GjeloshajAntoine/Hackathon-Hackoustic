@@ -35,7 +35,7 @@
     </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div class="navbar-nav text-white">
-    <a class="nav-item nav-link active text-white" href="/?page=mesure">Mesure<span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link active text-white" href="/index.php?page=mesure">Mesure<span class="sr-only">(current)</span></a>
     <a class="nav-item nav-link" href="index.php?page=map">Map</a>
     <a class="nav-item nav-link" href="index.php?page=sensibilisation">Sensibilisation</a>
     <a class="nav-item nav-link" href="index.php?page=parametres">Paramètres</a>
