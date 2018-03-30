@@ -24,6 +24,9 @@ if( isset ($_GET["page"])  && !empty($_GET["page"]) ){
       case 'sensibilisation':
         $view = "views/pages/sensibilisation.php";
         break;
+      case 'contact':
+        $view = "views/pages/contact.php";
+        break;
     default:
       $view = "views/pages/mesure.php";  // home page
 }

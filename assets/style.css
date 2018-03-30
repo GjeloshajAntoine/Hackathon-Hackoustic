@@ -165,3 +165,7 @@ input:checked + .slider:before {
   margin-top: 3px;
   font-weight: bold;
 }
+
+.form-group{
+  margin: 5% 0% 0% 5px;
+}
