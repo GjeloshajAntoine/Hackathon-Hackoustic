@@ -2,6 +2,9 @@
 
 // if( isset ($_GET["valeur"])  && !empty($_GET["valeur"]) ){
   $db = 20;
+    if($db<=20){
+      image
+    }if($db>20 && <=)
 // }else{
 //   location
 // }
