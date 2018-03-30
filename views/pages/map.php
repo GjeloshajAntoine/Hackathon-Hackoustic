@@ -40,8 +40,7 @@
           console.log("click",this);
           var lat =truc.latLng.lat();
           var lng=truc.latLng.lng()
-          var targetPoint = turf.point([lat, lng], {"marker-color": "#0F0"});
-          window.location.href="/?page=mesure"
+          window.location.href="/?page=lieux&lat="+lat+"&lng="+lng;
         });
 
       }
@@ -65,7 +64,6 @@
 
 
 
-var nearest = turf.nearestPoint(targetPoint, points);
 </script>
 
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH957nUQiCtu1McwPxpBbx9ABbBu4aXdg&callback=initMap">

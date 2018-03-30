@@ -1,5 +1,46 @@
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<input type="hidden" id="lat" name="" value="<?php  echo $_GET['lat'] ;?>">
+<input type="hidden" id="lng" name="" value="<?php  echo $_GET['lng']; ?>">
+<script type="text/javascript">
+  console.log($("#lat").val())
+  var lat=parseFloat($("#lat").val());
+  var lng=parseFloat($("#lng").val());
 
+//   var targetPoint = turf.point([lat, lng], {"marker-color": "#0F0"});
+//   var points = turf.featureCollection([
+//     turf.point([28.973865, 41.011122]),
+//     turf.point([28.948459, 41.024204]),
+//     turf.point([28.938674, 41.013324])
+//   ]);
+//
+// var nearest = turf.nearestPoint(targetPoint, points);
+  var targetPoint=turf.point([lat, lng], {"marker-color": "#0F0"});
+  $.ajax({
+    url:'data-mobility.brussels.json',
+  }).done(function (data) {
+    console.log(data);
+    var points=[]
+    for (coord of data.features) {
+      points.push(turf.point([coord.geometry.coordinates[1],coord.geometry.coordinates[0] ]))
+    }
+    var pointss=turf.featureCollection(points);
+    var nearest = turf.nearestPoint(targetPoint, pointss);
+    console.log(nearest);
+    var from = targetPoint
+    var to = turf.point([-75.534, 39.123]);
+    to=nearest.geometry.coordinates
+    var options = {units: 'kilometers'};
+
+    var distance = turf.distance(from, to, options);
+    console.log(distance);
+    $("#trav").innerHTML
+    document.getElementById("trav").innerHTML="Travaux à "+Math.round(distance * 100) / 100+" km";
+  });
+</script>
 <h4 class="text-center lieux"> Informations sonore </h4>
+<img style="float:left" src="https://maps.google.com/mapfiles/kml/shapes/earthquake.png" width="35"  alt="">
+<p  id="trav" style="font-size:1.5em;" >Travaux
+</p >
 <table class="table table-striped">
   <thead>
     <tr>
