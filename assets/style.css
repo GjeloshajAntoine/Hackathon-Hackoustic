@@ -72,3 +72,14 @@ color: black !important;
 .nav-item:hover{
 color: white !important;
 }
+
+/*page son*/
+.addMap{
+  color: white;
+  background-color: #153882;
+}
+
+.addMap:hover{
+  background-color: #0079BE;
+  color: white;
+}
