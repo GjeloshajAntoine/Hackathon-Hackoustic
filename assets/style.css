@@ -72,6 +72,14 @@ color: black !important;
 .nav-item:hover{
 color: white !important;
 }
+.unlist {
+    list-style-type: none;
+}
+.emoticon {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
 
 /*page son*/
 .addMap{
