@@ -33,10 +33,10 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div class="navbar-nav text-white">
     <a class="nav-item nav-link active text-white" href="mesure.php">Mesure<span class="sr-only">(current)</span></a>
-    <a class="nav-item nav-link" href="map.php">Map</a>
-    <a class="nav-item nav-link" href="sensibilisation.php">Sensibilisation</a>
-    <a class="nav-item nav-link" href="parametres.php">Paramètres</a>
-    <a class="nav-item nav-link" href="contact.php">Contact</a>
+    <a class="nav-item nav-link" href="/?page=map">Map</a>
+    <a class="nav-item nav-link" href="/?page=sensibilisation">Sensibilisation</a>
+    <a class="nav-item nav-link" href="/?page=parametres">Paramètres</a>
+    <a class="nav-item nav-link" href="/?page=contact">Contact</a>
   </div>
   <div class="container-fluid reseau_sociaux list-group flex-row d-flex justify-content-around">
       <a href="#"> <i class="fab fa-facebook-f fa-1x text-white"></i> </a>
