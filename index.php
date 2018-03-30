@@ -18,7 +18,10 @@ if( isset ($_GET["page"])  && !empty($_GET["page"]) ){
      case 'lieux':
         $view = "views/pages/lieux.php";
         break;
-               case 'sensibilisation':
+      case 'parametres':
+        $view = "views/pages/parametres.php";
+        break;
+      case 'sensibilisation':
         $view = "views/pages/sensibilisation.php";
         break;
     default:
