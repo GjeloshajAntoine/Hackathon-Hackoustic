@@ -6,7 +6,6 @@ body,html{
 }
 
 .theme{
-  /*background-color: #153882 !important;*/
   background-image: url("images/fdblue.jpg");
   background-repeat: round;
 }
@@ -19,23 +18,23 @@ body,html{
 }
 
 .red{
-    background-color:red;
+    background-color:#e15554;
 }
 .green {
-    background-color: green;
+    background-color: #58bc82;
 }
 .orange {
-    background-color: orange;
+    background-color: #c57026;
 }
 
 .textRed{
-    color:red;
+    color:#e15554;
 }
 .textGreen {
-    color: Green;
+    color: #58bc82;
 }
 .textOrange {
-    color: Orange;
+    color: #c57026;
 }
 
 #sendData{
@@ -46,7 +45,6 @@ body,html{
 
 .jwz{
     border:solid 0.5px rgba(0,0,0,0.2);
-    margin:30px auto;
     padding:30px 0px;
 }
 
@@ -63,9 +61,18 @@ body,html{
 
 .menu{
   color: white !important;
+  margin: 0;
   background: #4CA1AF;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4CA1AF, #C4E0E5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4CA1AF, #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-item.nav-link{
+  color: white !important;
+}
+
+.nav-item.nav-link:hover{
+  color: black !important;
 }
 
 .container-fluid{
@@ -100,17 +107,16 @@ color: white !important;
   color: white;
 }
 
-<<<<<<< HEAD
 .calme{
-  color: green;
+  color: #58bc82;
 }
 
 .normal{
-  color: orange;
+  color: #c57026;
 }
 
 .nuisible{
-  color: red;
+  color: #e15554;
 }
 
 /* The switch - the box around the slider */

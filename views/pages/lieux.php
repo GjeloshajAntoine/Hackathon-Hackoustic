@@ -37,14 +37,15 @@
     document.getElementById("trav").innerHTML="Travaux à "+Math.round(distance * 100) / 100+" km";
   });
 </script>
-<h4 class="text-center lieux"> Informations sonore </h4>
+<div class="theme">
+<h4 class="text-center lieux"> Informations sonores </h4>
 <img style="float:left" src="https://maps.google.com/mapfiles/kml/shapes/earthquake.png" width="35"  alt="">
 <p  id="trav" style="font-size:1.5em;" >Travaux
 </p >
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Debut</th>
+      <th scope="col">Début</th>
       <th scope="col">Fin</th>
       <th scope="col">Niveau Sonore</th>
     </tr>
@@ -175,3 +176,4 @@
 </table>
 
   <p class="text-center infos"> <a href="#"> Plus d'informatins </a> <p>
+</div>
