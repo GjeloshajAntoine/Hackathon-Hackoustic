@@ -83,3 +83,15 @@ color: white !important;
   background-color: #0079BE;
   color: white;
 }
+
+.calme{
+  color: green;
+}
+
+.normal{
+  color: orange;
+}
+
+.nuisible{
+  color: red;
+}
