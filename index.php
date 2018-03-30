@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 include "views/partials/header.php";
 
 
@@ -26,7 +23,7 @@ if( isset ($_GET["page"])  && !empty($_GET["page"]) ){
         break;
     default:
       $view = "views/pages/mesure.php";  // home page
-} 
+}
 
 }
 else {
@@ -34,6 +31,7 @@ else {
 }
 
 include $view;
+
 
 include "views/partials/footer.php";
 

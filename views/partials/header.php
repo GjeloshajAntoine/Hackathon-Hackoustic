@@ -33,11 +33,11 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div class="navbar-nav">
     <a class="nav-item nav-link active" href="index.php">Accueil <span class="sr-only">(current)</span></a>
-    <a class="nav-item nav-link" href="mesure.php">Mesure</a>
-    <a class="nav-item nav-link" href="map.php">Map</a>
-    <a class="nav-item nav-link disabled" href="sensibilisation.php">Sensibilisation</a>
-    <a class="nav-item nav-link disabled" href="parametres.php">Parametres</a>
-    <a class="nav-item nav-link disabled" href="contact.php">Contact</a>
+    <a class="nav-item nav-link" href="index.php?page=mesure.php">Mesure</a>
+    <a class="nav-item nav-link" href="index.php?page=map.php">Map</a>
+    <a class="nav-item nav-link disabled" href="index.php?page=sensibilisation.php">Sensibilisation</a>
+    <a class="nav-item nav-link disabled" href="index.php?page=parametres.php">Parametres</a>
+    <a class="nav-item nav-link disabled" href="index.php?page=contact.php">Contact</a>
   </div>
 </div>
 </nav>
