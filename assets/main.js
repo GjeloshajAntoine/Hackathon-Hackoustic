@@ -1,7 +1,7 @@
 var decibels = 0;
 var decibelsArray=[0];
 var mic;
-const socket = io('https://10.20.194:9091');
+const socket = io('https://192.168.1.22:9091');
 socket.on('connect', function () {
     console.log('connected');
   //  alert("Borne detectée, Bienvenue chez Becode");

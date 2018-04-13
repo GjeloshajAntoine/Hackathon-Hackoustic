@@ -1,11 +1,7 @@
 <?php
 
 $jokes=["Qu'est ce qui est jaune et qui attend? Jonathan","Tu connais la blague de la chaise?
-Elle est pliante","Quel super héros donne le plus vite l'heure ? Speed heure man ! ","Pourquoi Napoléon n' a jamais déménagé? -Parce qu'il avait un Bonaparte","Une blonde à une vendeuse blonde à la Fnac :
-- Je voudrais un livre
-- Quel auteur ?
-- Heu, 20 cm
-- Vincent qui ?"];
+Elle est pliante","Quel super héros donne le plus vite l'heure ? Speed heure man ! ","Pourquoi Napoléon n' a jamais déménagé? -Parce qu'il avait un Bonaparte"];
 $jokeSelect= rand(0,4);
 $decibels=0;
 if( isset ($_GET["moyenne"])  && !empty($_GET["moyenne"]) ){
@@ -42,13 +38,13 @@ else {
     </div>
     <!-- <p>Conseils :</p> -->
     <?php
-      if($decibels<250){
+      if($decibels<75){
         echo "<p> Pas de problèmes à signaler !</p>";
-      }else if($decibels >=250 && $decibels <600){
+      }else if($decibels >=75 && $decibels <120){
         echo "<p> Ne reste pas exposer à ce niveau sonore trop longtemps! Une heure gros max, des boules quies pourraient t'aider à rester plus longtemps. </p>";
       }
       else{
-        echo "<p> Tu as le choix :<ul class='unlist'><li>Enfuis toi !</li><li> Achètes toi de nouvelles oreilles </li><li> De bonne grosses boules quies</li><li>Prends le risque d'endomager tes oreilles :( </li></ul></p>";
+        echo "<p> Tu as le choix :<ul class='unlist'><li>Enfuis-toi !</li><li> Achètes-toi de nouvelles oreilles </li><li> De bonne grosses Boules Quies</li><li>Prends le risque d'endommager tes oreilles :( </li></ul></p>";
       }
     ?>
     <a href="index.php?page=sensibilisation" class="m-4">Plus d'informations...</a>
