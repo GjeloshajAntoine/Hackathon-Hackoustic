@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style media="screen">
+      h1{
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body style="transition: background-color 300ms linear;background-image:url('https://template.pro/wp-content/uploads/2017/03/d66ee334723123.56db37b00c058.jpg');">
+    <h1 style="backdrop-filter: blur(10px)">VOLUME:<span id="volume"></span>
+    </h1>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      var average_sound=0;
+      var app = require('http').createServer()
+      var io = require('socket.io')(app);
+      var fs = require('fs');
+
+      app.listen(9090);
+
+      io.on('connection', function (socket) {
+        socket.emit('news', { hello: 'world' });
+        socket.on('volume', function (data) {
+          average_sound=(average_sound+parseInt(data.volume))/2
+          document.getElementById("volume").innerHTML=average_sound
+          if (average_sound <45) {
+            document.getElementsByTagName('body')[0].style.backgroundColor="green"
+          }else if (average_sound < 75) {
+            document.getElementsByTagName('body')[0].style.backgroundColor="orange"
+          }else if (average_sound > 75) {
+            document.getElementsByTagName('body')[0].style.backgroundColor="red"
+          }
+          console.log(average_sound);
+        });
+      });
+    </script>
+  </body>
+</html>
