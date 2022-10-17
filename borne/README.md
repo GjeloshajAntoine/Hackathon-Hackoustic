@@ -13,3 +13,7 @@ npm install
 # Run the app
 npm start
 ```
+
+# Warning
+
+This app uses an old version of Electron.js and so isn't up to date security wise and doesn't use IPC to communicate with the different parts of the Electron.js plateform.
