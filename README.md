@@ -1,53 +1,10 @@
 # Hackoustic
 
-### page "Mesure"
-  contenu:
-  
-    - visualisation du niveau sonore
-    - bouton submit
-    
-  action: 
-  
-    - traitement des données renvoyé vers la page "Infos son"
-    
-### page "Infos son"
-  contenu: 
-  
-    - quote
-    - infos relatives au son (smiley de couleurs différentes)
-    - infos relatives au lieu
-    - lien page "Infos sensibilisation"
-    - possibilité d'ajout à la page "Map"
-    
-  action:
-  
-    - vers la page "Maps"
-    - vers la page "Infos sensibilisation"
-  
-### page "Map"
-  contenu:
-  
-    - lieux repertoriés via API
-    - lieux ajoutés par l'utilisateur
-    
-  action:
-  
-    - vers la page "Infos lieux"
+A project made for the Hackathon of the CIRB (Centre d'Informatique pour la Région Bruxelloise) and BeCode.
 
-  
-### page "Infos lieux"
-  contenu:
-  
-    - niveau sonore selon des plages horaires
-    - lien ves la page "Infos sensibilisation"
-    
-  action:
-  
-    - vers la page "Infos sensibilisation"
+As of 2018, it will be soon required for bars and coffee shops to limit their noise level.
+In order to help them do that, we developped a little plateform to measure and display the a amount of noise of a certain place.
 
-  
-### page "Infos sensibilisation
-  contenu:
-  
-    - conseils selon le niveau recupéré
-  
+
+The plateform is made of two parts, one is a website, no app needed, it is aimed at smartphones of the clients of coffee shops and measure the sound.
+The second part is an electron app, it takes the sound measurement of all connected smartphones and displays colors that indicates if the sound level is acceptable or not.
